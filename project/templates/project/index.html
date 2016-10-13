@@ -1,0 +1,9 @@
+{% if lastest_question_list %}
+        <ul>
+          { % for question in lastest_question_list % }
+                <li><a href="/project/{{question.id}}/"> {{question.question_text}}</a></li>
+          </ul>
+          {%endfor%}
+{% else %}
+         <p> No project are avaiable .</p>
+{% endif %}
